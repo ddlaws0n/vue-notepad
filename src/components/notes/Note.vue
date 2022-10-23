@@ -12,7 +12,11 @@
       <p class="mt-2 text-gray-800 dark:text-gray-400">
         {{ note.content }}
       </p>
-      <div class="text-right text-gray-400"><small>XXX characters</small></div>
+      <div class="text-right">
+        <small class="mt-5 text-xs text-gray-400 dark:text-gray-400"
+          >{{ note.content.length }} characters</small
+        >
+      </div>
     </div>
   </div>
 </template>
