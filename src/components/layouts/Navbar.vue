@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-sm py-4 dark:bg-gray-800"
+    class="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white border-b border-gray-200 text-sm py-4 dark:bg-gray-800 dark:border-gray-700"
   >
     <nav
       class="max-w-[85rem] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between"
@@ -71,12 +71,12 @@
           <RouterLink
             class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             to="/"
-            >View Notes</RouterLink
+            >Notes</RouterLink
           >
           <RouterLink
             class="font-medium text-gray-600 hover:text-gray-400 dark:text-gray-400 dark:hover:text-gray-500"
             to="/stats"
-            >View Stats</RouterLink
+            >Stats</RouterLink
           >
         </div>
       </div>

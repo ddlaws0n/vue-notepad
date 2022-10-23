@@ -6,10 +6,10 @@ module.exports = {
     "node_modules/preline/dist/*.js",
   ],
   theme: {
-    container: {
-      center: true,
-      padding: '2rem',
-    },
+    // container: {
+    //   center: true,
+    //   padding: '2rem',
+    // },
     extend: {},
   },
   plugins: [
