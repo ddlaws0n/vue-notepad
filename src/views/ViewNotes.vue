@@ -25,7 +25,7 @@
 <script setup>
 import { ref } from "vue";
 import Note from "@/components/notes/Note.vue";
-import AddEditNote from "../components/notes/AddEditNote.vue";
+import AddEditNote from "@/components/notes/AddEditNote.vue";
 import { useNotesStore } from "@/stores/storeNotes";
 import { useWatchCharacters } from "@/use/useWatchCharacters";
 
