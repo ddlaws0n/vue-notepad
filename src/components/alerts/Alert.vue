@@ -1,7 +1,7 @@
 <template>
   <div
     id="dismiss-alert"
-    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 bg-yellow-50 border-yellow-200 rounded-md p-4"
+    class="hs-removing:translate-x-5 hs-removing:opacity-0 transition duration-300 bg-yellow-50 border-yellow-200 rounded-md p-4 fixed"
     role="alert"
   >
     <div class="flex">

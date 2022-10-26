@@ -64,7 +64,12 @@
         {{ note.content }}
       </p>
     </div>
-    <div class="inline-flex justify-end mt-auto py-1 px-4 md:py-2 md:px-5">
+    <div class="justify-between mt-auto py-1 px-4 md:py-2 md:px-5 inline-flex">
+      <div class="text-left">
+        <small class="mt-5 text-xs text-gray-400 dark:text-gray-400">{{
+          dateFormatted
+        }}</small>
+      </div>
       <div class="text-right">
         <small class="mt-5 text-xs text-gray-400 dark:text-gray-400">{{
           characterLength
@@ -77,8 +82,13 @@
 <script setup>
 import { computed } from "vue";
 import { useNotesStore } from "@/stores/storeNotes";
+import { useDateFormat } from "@vueuse/core";
 
 const storeNotes = useNotesStore();
+const dateFormatted = computed(() => {
+  let date = Date(parseInt(props.note.createdDate));
+  return useDateFormat(date, "DD MMM YYYY").value;
+});
 
 const props = defineProps({
   note: {

@@ -1,4 +1,5 @@
 <template>
+  <Alert v-if="alerts.showAlert" />
   <div class="grid lg:grid-cols-3 lg:gap-4">
     <AddEditNote
       v-model="newNote"
@@ -23,9 +24,10 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, reactive } from "vue";
 import Note from "@/components/notes/Note.vue";
 import AddEditNote from "@/components/notes/AddEditNote.vue";
+import Alert from "@/components/alerts/Alert.vue";
 import { useNotesStore } from "@/stores/storeNotes";
 import { useWatchCharacters } from "@/use/useWatchCharacters";
 
@@ -41,4 +43,8 @@ const addNote = () => {
 };
 
 useWatchCharacters(newNote, 5);
+
+const alerts = reactive({
+  showAlert: false,
+});
 </script>
