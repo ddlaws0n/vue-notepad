@@ -1,7 +1,10 @@
 <template>
   <div class="flex flex-col h-screen">
     <Navbar />
-    <main id="content" class="shrink-0" role="main">
+    <main
+      id="content"
+      class="shrink-0"
+      role="main">
       <div class="max-w-7xl mx-auto py-10 px-4 sm:px-6 lg:px-8">
         <RouterView />
       </div>
